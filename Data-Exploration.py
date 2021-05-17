@@ -35,9 +35,9 @@ def preprocess(train_data, test_data):
     test_data = test_data.reshape(-1,32,32,3)
     print('Test data shape: ', test_data.shape)
     train_data = train_data.astype('float32')
-    print(train_data.dtype)
+    print('Train data type: ', train_data.dtype)
     test_data = test_data.astype('float32')
-    print(test_data.dtype)
+    print('Test data type: ', test_data.dtype)
 
 # Preprocess the data
 preprocess(train_data=train_data, test_data=test_data)
